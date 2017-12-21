@@ -1,4 +1,4 @@
-package nyc.c4q.unit04mid_unitassessment;
+package nyc.c4q.unit04mid_unitassessment.Fragments;
 
 
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
+import nyc.c4q.unit04mid_unitassessment.Fragments.DisplayFragment;
+import nyc.c4q.unit04mid_unitassessment.R;
 
 
 /**
@@ -30,7 +32,7 @@ public class MainFragment extends Fragment {
 
     rootview = inflater.inflate(R.layout.fragment_main, container, false);
 
-    Button button = (Button) rootview.findViewById(R.id.display_fragment_button);
+    Button button = rootview.findViewById(R.id.display_fragment_button);
 
     button.setOnClickListener(new OnClickListener() {
       @Override
