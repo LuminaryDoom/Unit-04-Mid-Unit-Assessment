@@ -44,6 +44,7 @@ public class BottomFragment extends Fragment {
 
     bookJSONparser(json);
 
+
     return rootview;
   }
 
@@ -67,7 +68,7 @@ public class BottomFragment extends Fragment {
 
     recyclerView = rootview.findViewById(R.id.books_recycler);
       recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false));
-      BooksAdapter booksAdapter = new BooksAdapter(resultList);
+      BooksAdapter booksAdapter = new BooksAdapter(resultList, getActivity());
       recyclerView.setAdapter(booksAdapter);
     } catch (JSONException e) {
       e.printStackTrace();
